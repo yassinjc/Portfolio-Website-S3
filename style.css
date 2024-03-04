@@ -5,7 +5,10 @@
     src: url('fonts/Messapia-Bold.otf');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&display=swap');
+@font-face {
+    font-family: RedRose;
+    src: url('fonts/RedRose-VariableFont_wght.ttf');
+}
 
 /* De basis styling */
 
@@ -16,6 +19,7 @@ html {
 body {
     margin: 0;
     background-color: black;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -28,7 +32,7 @@ h1 {
 }
 
 p {
-    font-family: 'Red Rose';
+    font-family: RedRose;
     font-weight: 100;
     color: white;
     font-size: 1.3vw;
@@ -40,13 +44,27 @@ p:hover~.cursor {
     opacity: .5;
 }
 
+/* De styling voor de scrollbalk */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6152FB;
+}
+
 /* De styling voor de welkomsttekst */
 
 .main-text {
     display: grid;
     place-content: center;
     align-items: center;
-    margin-top: -63vh;
+    margin-top: -56vh;
 }
 
 #main-text-low {
@@ -147,8 +165,8 @@ a:hover {
 svg {
     display: flex;
     position: absolute;
-    margin-top: 0.6vh;
-    width: 1.9vw;
+    margin-top: 0.4vh;
+    width: 2vw;
     height: 1.9vh;
 }
 
@@ -291,7 +309,7 @@ span {
 
 #about-me-text {
     padding-left: 26vw;
-    margin-top: -39vh;
+    margin-top: -43.5vh;
 }
 
 /* De styling voor de projecten-sectie */
@@ -516,7 +534,7 @@ h2 {
 }
 
 #backtoprojects {
-    font-family: 'Red Rose';
+    font-family: RedRose;
     font-weight: 100;
     font-style: italic;
     font-size: 1vw;
