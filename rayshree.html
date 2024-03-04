@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yassin Chehlaoui | Rayshree Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome ingeladen voor Back-To-Top knop -->
+    <script src="https://kit.fontawesome.com/cb30ddbe34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- De navigatieknoppen voor de projectpagina -->
+        <div class="top-navigatie-buttons">
+            <a id="logo" href="index.html">
+                <svg width="18" height="18" viewBox="0 0 18 18">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="9" cy="9" r="9" fill="#6153ff" />
+                </svg>
+                <div class="naam">
+                    <span>
+                        YASSIN
+                    </span>
+                    <span>
+                        CHEHLAOUI
+                    </span>
+                </div>
+            </a>
+
+            <a id="prev-btn" href="ar-jane.html"><i class="fas fa-chevron-left"></i></a>
+            <a id="next-btn" href="portfolio.html"><i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!--De headerfoto voor de projectpagina -->
+        <div class="heading-img">
+            <img src="images/rayshree-heading.png" alt="">
+        </div>
+
+        <!-- De "scroll down"-animatie -->
+        <div class="projects-scroll scroll-down-arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- De projectinhoud -->
+    <section class="project-content">
+        <div class="reveal">
+            <h2>OFFERING BEAUTY IN THE BEST WAY</h2>
+            <p> For my passion project in semester 3, i decided to make a website for the hair & make-up artist
+                Rayshree. The
+                purpose of this website is to showcase all of the beauty services offered by Rayshree with all the
+                needed information, along with an overview of all of her previous work in a clear way.
+                <br><br>After having done enough research and having spoken with Rayshree on multiple occasions to set a
+                foundation for the website, i started working on the design. We went back and forth reviewing different
+                designs until we eventually had a finalised design. After usertesting this design i started developing
+                the website to make it fully functional and ready for Rayshree to be used.<br><br>
+            </p>
+            <img src="images/rayshree-pic1.png" alt="">
+            <img src="images/rayshree-pic2.png" alt="">
+            <a href="https://i490557.hera.fhict.nl/rayshrees-hair-and-make-up-website-s3/index.html">
+                <button class="endproduct-btn">
+                    VIEW FINAL PRODUCT
+                </button>
+            </a>
+            <br>
+            <a id="backtoprojects" href="index.html#projects">
+                <i class="fas fa-chevron-left"></i>
+                Back to projects
+            </a>
+        </div>
+        <br>
+    </section>
+
+    <!-- Het cirkeltje die de muis volgt -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+
+    <p id="copyright">
+        © Yassin Chehlaoui 2022
+    </p>
+
+    <!-- De GSAP en Split Type Libraries inladen, voor animatie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- SwiperJS Library inladen voor de projecten-slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- JQuery inladen voor paginasectie animaties -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

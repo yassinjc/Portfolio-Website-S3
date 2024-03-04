@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yassin Chehlaoui | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- SwiperJS CSS bestand inladen voor de projecten sectie -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!-- FontAwesome ingeladen voor Back-To-Top knop -->
+    <script src="https://kit.fontawesome.com/cb30ddbe34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- De navigatieknoppen voor de landingspagina -->
+        <div class="top-navigatie-buttons">
+            <a id="logo" href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="9" cy="9" r="9" fill="#6153ff" />
+                </svg>
+                <div class="naam">
+                    <span>
+                        YASSIN
+                    </span>
+                    <span>
+                        CHEHLAOUI
+                    </span>
+                </div>
+            </a>
+            <a id="about-me-btn" href="#about-me">ABOUT ME</a>
+        </div>
+        <div class="bottom-navigatie-buttons">
+            <a id="projects-btn" href="#projects">PROJECTS</a>
+            <a id="contact-btn" href="#contact">CONTACT</a>
+        </div>
+
+        <!-- De "scroll down"-animatie -->
+        <div class="scroll-down-arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- De welkomsttekst, verdeeld per tekstdeel-->
+        <div class="main-text">
+            <h1 id="main-text-highest">Go ahead</h1>
+            <h1 id="main-text-high">Go ahead</h1>
+            <h1 id="main-text">Go ahead</h1>
+            <h1 id="main-text">And explore</h1>
+            <h1 id="main-text-low">And explore</h1>
+            <h1 id="main-text-lowest">And explore</h1>
+        </div>
+    </header>
+
+    <!-- Het cirkeltje die de muis volgt -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <a href="#" class="to-top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- De "About Me"-sectie -->
+    <section id="about-me">
+        <div class="about-me-div reveal">
+            <div class="about-me-kop">
+                <img src="images/about-me-kop.png" alt="">
+            </div>
+            <div class="about-me-content">
+                <img src="images/selfie.png" alt="">
+                <p id="about-me-text">My name is Yassin Chehlaoui.<br><br>
+
+                    I'm an 18 year old student currently studying IT & Media Design<br>at the Fontys Hogeschool ICT.
+                    Within this sector i am
+                    allowed<br>to express my creativity, that's exactly what
+                    sparked my<br>passion for IT & Media Design and the
+                    reason i chose this path.
+                    <br><br>
+                    This is my portfolio, the place where i showcase my
+                    capabilities<br>through all my projects. Feel free to take a
+                    look at my work.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- De projecten sectie -->
+    <section id="projects">
+        <div class="projects-div reveal">
+            <div class="projects-kop">
+                <img src="images/projects-kop.png" alt="">
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="ar-jane.html"><img src="images/ar-jane.png" alt=""></a>
+                        <h2>AR-JANE WEBSITE</h2>
+                        <p id="undertext">Semester 2, Group Project</p>
+                        <a href="ar-jane.html">READ MORE</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="rayshree.html"><img src="images/rayshree.png" alt=""></a>
+                        <h2>RAYSHREE WEBSITE</h2>
+                        <p id="undertext">Semester 3, Passion Project</p>
+                        <a href="rayshree.html">READ MORE</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="musicvid.html"><img src="images/s2portfolio.png" alt=""></a>
+                        <h2>PORTFOLIO WEBSITE</h2>
+                        <p id="undertext">Semester 2</p>
+                        <a href="musicvid.html">READ MORE</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="musicvid.html"><img src="images/sprint-x.png" alt=""></a>
+                        <h2>PERSONAL MUSIC VIDEO</h2>
+                        <p id="undertext">Semester 2, Sprint X</p>
+                        <a href="musicvid.html">READ MORE</a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- De contact sectie -->
+    <section id="contact">
+        <div class="contact-div">
+            <div class="contact-kop">
+                <img src="images/contact-kop.png" alt="">
+            </div>
+            <div class="contact-content">
+                <p id="contact-text">Any inquiries?<br>
+                    Feel free to contact me through the email form below</p>
+                <a href="mailto: 490557@student.fontys.nl">
+                    <button class="contact-btn">
+                        CONTACT ME
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <p id="copyright">
+        © Yassin Chehlaoui 2022
+    </p>
+
+    <!-- De GSAP en Split Type Libraries inladen, voor animatie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- SwiperJS Library inladen voor de projecten-slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- JQuery inladen voor paginasectie animaties -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

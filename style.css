@@ -1,0 +1,546 @@
+/* De fonts inladen */
+
+@font-face {
+    font-family: MessapiaBold;
+    src: url('fonts/Messapia-Bold.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&display=swap');
+
+/* De basis styling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+h1 {
+    margin-top: -4vw;
+    color: white;
+    font-family: MessapiaBold;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+p {
+    font-family: 'Red Rose';
+    font-weight: 100;
+    color: white;
+    font-size: 1.3vw;
+}
+
+p:hover~.cursor {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: #c6c6c6;
+    opacity: .5;
+}
+
+/* De styling voor de welkomsttekst */
+
+.main-text {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    margin-top: -63vh;
+}
+
+#main-text-low {
+    text-shadow: 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white;
+    color: black;
+    opacity: 50%;
+}
+
+#main-text-lowest {
+    text-shadow: 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white;
+    color: black;
+    opacity: 20%;
+}
+
+#main-text-high {
+    text-shadow: 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white;
+    color: black;
+    opacity: 50%;
+}
+
+#main-text-highest {
+    text-shadow: 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white;
+    color: black;
+    opacity: 20%;
+}
+
+/* De styling van de welkomsttekst animatie */
+
+.word {
+    transform: translateY(115px);
+    transition: transform 1.5s;
+}
+
+#main-text-low .word {
+    transform: translateY(-115px);
+    transition: transform 1.8s;
+}
+
+#main-text-lowest .word {
+    transform: translateY(-115px);
+    transition: transform 1.8s;
+}
+
+#main-text-high .word {
+    transform: translateY(115px);
+    transition: transform 1.8s;
+}
+
+#main-text-highest .word {
+    transform: translateY(115px);
+    transition: transform 1.8s;
+}
+
+/* De styling voor de navigatieknoppen en het logo */
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: MessapiaBold;
+    font-size: 1.2vw;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #6152FB;
+}
+
+.top-navigatie-buttons {
+    display: flex;
+    margin-top: 7vh;
+    margin-left: 12vw;
+    animation: fadeDown 3s;
+}
+
+@keyframes fadeDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0%;
+    }
+
+    50% {
+        transform: translateY(-100%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translate(0%);
+        opacity: 100%;
+    }
+}
+
+/* De styling en de animatie voor het logo */
+
+#logo {
+    margin-right: 55vw;
+}
+
+svg {
+    display: flex;
+    position: absolute;
+    margin-top: 0.6vh;
+    width: 1.9vw;
+    height: 1.9vh;
+}
+
+.bottom-navigatie-buttons {
+    display: flex;
+    margin-top: 38vw;
+    margin-left: 12vw;
+    animation: fadeUp 3s;
+}
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+
+    50% {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+#projects-btn {
+    margin-right: 57.6vw;
+}
+
+span {
+    display: block;
+    animation: spin_words 10s infinite;
+}
+
+@keyframes spin_words {
+    0% {
+        transform: translateY(0%);
+    }
+
+    40% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-100%);
+    }
+
+    60% {
+        transform: translateY(-100%);
+    }
+
+    90% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.naam {
+    padding-left: 1.7vw;
+    clip-path: polygon(0 9%, 0% 100%, 0 44%, 100% 44%, 100% 9%);
+}
+
+/* De styling en animatie voor de scroll down notificatie */
+
+.scroll-down-arrow {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    margin-top: -4vh;
+}
+
+.scroll-down-arrow span {
+    display: block;
+    width: 1.3vw;
+    height: 1.3vw;
+    border-bottom: 1px solid #6153FB;
+    border-right: 1px solid #6153FB;
+    transform: rotate(45deg);
+    margin: -1vh;
+    animation: animate 4s infinite;
+}
+
+.scroll-down-arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.scroll-down-arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-2vw, -2vw);
+    }
+
+    50% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-2vw, -2vw);
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(2vw, 2vw);
+    }
+}
+
+/* De styling voor de about-me pagina */
+
+.about-me-kop {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    margin-top: 35vh;
+    padding-top: 18vh;
+}
+
+.about-me-kop img {
+    width: 15vw;
+}
+
+.about-me-content img {
+    width: 20vw;
+}
+
+.about-me-content {
+    margin-left: 15.5vw;
+    margin-top: 7vh;
+}
+
+#about-me-text {
+    padding-left: 26vw;
+    margin-top: -39vh;
+}
+
+/* De styling voor de projecten-sectie */
+
+#projects {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.projects-kop {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    margin-top: 30vh;
+    padding-top: 15vh;
+}
+
+.projects-kop img {
+    width: 15vw;
+}
+
+h2 {
+    color: white;
+    font-family: MessapiaBold;
+    font-weight: 100;
+    font-size: 1.21vw;
+}
+
+#undertext {
+    font-size: 0.9vw;
+    color: #959595;
+    margin-bottom: 3.5vh;
+    margin-top: 0.1vh;
+}
+
+/* De styling voor de projecten-slider */
+
+.swiper-wrapper .swiper-slide img {
+    width: 22vw;
+}
+
+.swiper-slide {
+    display: grid;
+    line-height: 0.5vh;
+    place-content: center;
+}
+
+.swiper-wrapper .swiper-slide a {
+    font-weight: 100;
+    text-decoration: underline;
+    color: #786CFF;
+    font-size: 0.9vw;
+    transition: 0.2s;
+}
+
+.swiper-wrapper {
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+}
+
+/* De styling voor de contactsectie */
+
+.contact-kop {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.contact-kop img {
+    width: 15vw;
+}
+
+#contact-text {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.contact-btn {
+    background-color: black;
+    color: #6152FB;
+    border: 1px solid #6152FB;
+    font-family: MessapiaBold;
+    width: 12.4vw;
+    height: 6vh;
+    font-size: 1vw;
+    margin-left: 43.3vw;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+}
+
+.contact-btn:hover {
+    background-color: #6152FB;
+    color: black;
+}
+
+#copyright {
+    font-size: 0.8vw;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+/* De styling voor de reveal animaties van alle secties */
+
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* De styling van de projectpagina's */
+
+.prev-next-btns {
+    position: sticky;
+    top: 50vh;
+}
+
+.to-top-btn {
+    position: fixed;
+    color: #6152FB;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    left: 90vw;
+    top: 88vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top-btn.active {
+    top: 88vh;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#prev-btn {
+    z-index: 10;
+    margin-left: 7vw;
+    cursor: pointer;
+}
+
+#next-btn {
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+.heading-img img {
+    width: 100vw;
+    margin-top: -20vh;
+    margin-bottom: -7vh;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+
+    70% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.project-content {
+    margin-left: 13vw;
+    margin-right: 13vw;
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-top: 15vh;
+}
+
+.project-content h2 {
+    font-size: 1.6vw;
+}
+
+.project-content p {
+    margin-top: -1vh;
+    margin-bottom: 0.5vh;
+    text-align: left;
+}
+
+.project-content img {
+    width: 30vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 5vh;
+}
+
+.endproduct-btn {
+    background-color: black;
+    color: #6152FB;
+    border: 1px solid #6152FB;
+    font-family: MessapiaBold;
+    width: 18.4vw;
+    height: 6vh;
+    font-size: 1vw;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 3vh;
+    z-index: 3;
+}
+
+.endproduct-btn:hover {
+    background-color: #6152FB;
+    color: black;
+}
+
+#backtoprojects {
+    font-family: 'Red Rose';
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1vw;
+}
+
+#backtoprojects i{
+    font-size: 0.8vw;
+}
+
+.projects-scroll {
+    margin-top: -15vh;
+}
+
+/* De styling voor het cirkeltje die de cursor volgt */
+
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: #6152FB;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: exclusion;
+    transition: 0.1s;
+    z-index: 10;
+}
